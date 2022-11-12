@@ -4,13 +4,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Piedra, Papel o Tijera</title>
-    <script src="index.js"></script>
+    <title>Rock, Paper or Scissors Game</title>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <center>
-        <h1>Rock, Paper or Scissors</h1>
-        <h3>HEllo</h3>
-    </center>
+    <div class="container">
+        <div class="main">
+            <h1>Rock, Paper or Scissors Game</h1>
+            <img src="images/main.jpg" class="main-logo">
+        </div>
+        <div class="buttons">
+            <button id="btn-r" class="btn btn-left">Rock</button>
+            <button id="btn-p" class="btn">Paper</button>
+            <button id="btn-s" class="btn btn-right">Scissors</button>
+        </div>
+        <div class="score">
+            <div class="box-score box-score-left" id="user_score">0</div>
+            <div class="box-score"><strong>SCORE</strong></div>
+            <div class="box-score box-score-right" id="pc_score">0</div>
+        </div>
+        <div class="round">
+            <div class="round-score" id="round"><strong>ROUND</strong></div>
+            <div class="round-score" id="round-marker">0</div>
+            <div class="round-score" id="round-winner"><strong>WINNER</strong></div>
+            <div class="round-score" id="round-winner-marker"></div>
+        </div>
+    </div>
+    <script src="index.js"></script>
 </body>
 </html>
