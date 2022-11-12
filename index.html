@@ -3,34 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
     <title>Rock, Paper or Scissors Game</title>
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    
 </head>
 <body>
-    <div class="container">
-        <div class="main">
+    
+        <section class="main">
             <h1>Rock, Paper or Scissors Game</h1>
             <img src="images/main.jpg" class="main-logo">
-        </div>
-        <div class="buttons">
+        </section>
+        <section class="buttons">
             <button id="btn-r" class="btn btn-left">Rock</button>
             <button id="btn-p" class="btn">Paper</button>
             <button id="btn-s" class="btn btn-right">Scissors</button>
-        </div>
-        <div class="score">
+        </section>
+        <section class="score">
             <div class="box-score box-score-left" id="user_score">0</div>
             <div class="box-score"><strong>SCORE</strong></div>
             <div class="box-score box-score-right" id="pc_score">0</div>
-        </div>
-        <div class="round">
+        </section>
+        <section class="round">
             <div class="round-score" id="round"><strong>ROUND</strong></div>
             <div class="round-score" id="round-marker">0</div>
             <div class="round-score" id="round-winner"><strong>WINNER</strong></div>
             <div class="round-score" id="round-winner-marker"></div>
-        </div>
-    </div>
+        </section>
+    
     <script src="index.js"></script>
 </body>
 </html>
